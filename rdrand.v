@@ -1,7 +1,7 @@
 #include "TestU01.h"
 #flag -I./TestU01-1.2.3/include -I./TestU01-1.2.3/testu01
 #flag -L./TestU01-1.2.3/testu01/.libs -L./TestU01-1.2.3/probdist/.libs -L./TestU01-1.2.3/mylib/.libs
-#flag -ltestu01 -lprobdist -lmylib
+#flag -ltestu01 -lprobdist -lmylib -lm
 
 fn rdrand() u64 {
 	mut value := u64(0)
