@@ -173,7 +173,7 @@ static unsigned long AES_Bits (void *vpar, void *vsta)
          state->i = param->r;
       }
       Z <<= 8;
-      Z |= (unsigned long) state->CT[state->i++];  
+      Z |= (unsigned long) state->CT[state->i++];
    }
 
    return Z;
@@ -381,7 +381,7 @@ static unsigned long SHA1_Bits (void *junk, void *vsta)
       }
 
       Z <<= 8;
-      Z |= (unsigned long) state->output[state->i++];  
+      Z |= (unsigned long) state->output[state->i++];
    }
 
    return Z;
@@ -512,4 +512,4 @@ void ucrypto_DeleteSHA1 (unif01_Gen * gen)
 /*=========================================================================*/
 /* Generator ISAAC */
 
-#include "ucryptoIS.c"
+// #include "ucryptoIS.c"
