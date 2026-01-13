@@ -24,12 +24,12 @@ fn rdrand() u32 {
 @[typedef]
 struct C.unif01_Gen{}
 
-fn C.unif01_CreateExternGenBitsL(charptr, voidptr) &C.unif01_Gen
+fn C.unif01_CreateExternGenBits(charptr, voidptr) &C.unif01_Gen
 fn C.bbattery_SmallCrush(&C.unif01_Gen)
 fn C.bbattery_Crush(&C.unif01_Gen)
 fn C.bbattery_BigCrush(&C.unif01_Gen)
 
 fn main() {
-	v := C.unif01_CreateExternGenBitsL('rdrand CPU'.str, voidptr(rdrand))
+	v := C.unif01_CreateExternGenBits('rdrand CPU'.str, voidptr(rdrand))
 	C.bbattery_SmallCrush(v)
 }
