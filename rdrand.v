@@ -24,6 +24,7 @@ fn rdrand() u32 {
 @[typedef]
 struct C.unif01_Gen{}
 
+fn C.unif01_CreateExternGen01(charptr, voidptr) &C.unif01_Gen
 fn C.unif01_CreateExternGenBits(charptr, voidptr) &C.unif01_Gen
 fn C.bbattery_SmallCrush(&C.unif01_Gen)
 fn C.bbattery_Crush(&C.unif01_Gen)
