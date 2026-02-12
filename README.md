@@ -4,6 +4,7 @@ Test RNG by TestU01 via vlang
 clone repo
 cd vlang-testu01/
 cd TestU01-1.2.3/
+autoreconf -fi
 ./configure
 make -j8
 cd ..
